@@ -9,4 +9,10 @@ public class CompactDiskTest{
    assertEquals(true, myCompactDisk instanceof CompactDisk);
  }
 
+ @Test
+ public void CompactDisk_intantiatesCorrectly_String() {
+   CompactDisk myCompactDisk = new CompactDisk("Generic title");
+   assertEquals("Generic title", myCompactDisk.getTitle());
+ }
+
 }
