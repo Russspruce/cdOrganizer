@@ -5,22 +5,28 @@ public class CompactDiskTest{
 
  @Test
  public void CompactDisk_intantiatesCorrectly_true() {
-   CompactDisk myCompactDisk = new CompactDisk("Generic title");
-   assertEquals(true, myCompactDisk instanceof CompactDisk);
+   CompactDisk testCompactDisk = new CompactDisk("Generic title", "Generic artist");
+   assertEquals(true, testCompactDisk instanceof CompactDisk);
  }
 
  @Test
  public void CompactDisk_intantiatesCorrectly_String() {
-   CompactDisk myCompactDisk = new CompactDisk("Generic title");
-   assertEquals("Generic title", myCompactDisk.getTitle());
+   CompactDisk testCompactDisk = new CompactDisk("Generic title", "Generic artist");
+   assertEquals("Generic title", testCompactDisk.getTitle());
  }
 
 @Test
 public void all_returnsAllInstancesOfCompactDisk_true() {
-  CompactDisk firstCompactDisk = new CompactDisk("Generic title");
-  CompactDisk secondCompactDisk = new CompactDisk("Summer rose");
+  CompactDisk firstCompactDisk = new CompactDisk("Generic title", "Generic artist");
+  CompactDisk secondCompactDisk = new CompactDisk("Summer rose", "Ruby Rose");
   assertTrue(CompactDisk.all().contains(firstCompactDisk));
   assertTrue(CompactDisk.all().contains(secondCompactDisk));
+}
+
+@Test
+public void getArtist_instatiatesCorretly_GenericArtist() {
+  CompactDisk testCompactDisk = new CompactDisk("Generic title", "Generic artist");
+  assertEquals("Generic artist", testCompactDisk.getArtist());
 }
 
 }
