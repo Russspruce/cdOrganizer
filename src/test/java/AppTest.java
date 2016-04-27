@@ -44,4 +44,20 @@ public class AppTest extends FluentTest {
 
   }
 
+  // @Test
+  // public void compactDiskShowsIndiviualCD(){
+  //   goTo("http://localhost:4567/");
+  //   click("a", withText("Add New CD"));
+  //   fill("#title").with("Summer rose");
+  //   submit(".btn");
+  //   click("a", withText("View CDs"));
+  //   click("a", withText("Summer rose"));
+  //   assertThat(pageSource()).contains("Summer rose");
+  // }
+
+  @Test
+  public void cdNotFound() {
+    goTo("http://localhost:4567/compactdisks/999");
+    assertThat(pageSource()).contains("No CDs entered here at the moment");
+  }
 }

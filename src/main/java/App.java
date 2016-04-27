@@ -29,6 +29,14 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
+    get("/compactdisks/:id", (request, response) -> {
+      HashMap<String, Object> model = new HashMap<String, Object>();
+      CompactDisk compactdisk = CompactDisk.find(Integer.parseInt(request.params(":id")));
+      model.put("compactdisk", compactdisk);
+      model.put("template", "templates/compactdisk.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
     post("/compactdisks", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
       String title = request.queryParams("title");

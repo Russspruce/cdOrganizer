@@ -33,4 +33,12 @@ public class CompactDisk{
     return mId;
   }
 
+  public static CompactDisk find(int id) {
+    try{
+      return instances.get(id - 1);
+    } catch (IndexOutOfBoundsException e) {
+      return null;
+    }
+  }
+
 }
