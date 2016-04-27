@@ -24,4 +24,13 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("CD Organizer");
   }
 
+  @Test
+  public void compactDiskIsCreatedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add New CD"));
+    fill("#title").with("Summer rose");
+    submit(".btn");
+    assertThat(pageSource()).contains("Your CD has been saved.");
+  }
+
 }

@@ -16,6 +16,12 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
+    get("/compactdisks/new", (request, response) -> {
+      HashMap<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/CD_Form.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
     post("/compactdisks", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
       String title = request.queryParams("title");
