@@ -33,4 +33,15 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Your CD has been saved.");
   }
 
+  @Test
+  public void compactDiskProperStorage(){
+    goTo("http://localhost:4567/");
+    click("a", withText("Add New CD"));
+    fill("#title").with("Summer rose");
+    submit(".btn");
+    click("a", withText("View CDs"));
+    assertThat(pageSource()).contains("Summer rose");
+
+  }
+
 }
