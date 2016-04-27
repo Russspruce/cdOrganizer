@@ -1,0 +1,7 @@
+<h1>All Cds</h1>
+<ul>
+  #foreach ($compactdisk in $compactdisks)
+    <li><a href="/compactdisks/$compactdisk.getId()">$task.getTitle()</a></li>
+  #end
+</ul>
+<a href="/tasks/new">Add New CD</a>

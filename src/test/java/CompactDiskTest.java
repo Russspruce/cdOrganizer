@@ -29,4 +29,18 @@ public void getArtist_instatiatesCorretly_GenericArtist() {
   assertEquals("Generic artist", testCompactDisk.getArtist());
 }
 
+@Test
+public void clear_emptiesAllTasksFromArrayList_0() {
+  CompactDisk myCompactDisk = new CompactDisk("Generic title", "Generic artist");
+  CompactDisk.clear();
+  assertEquals(CompactDisk.all().size(), 0);
+}
+
+// @Test
+// public void getId_compactDisksInstatiateWithAnID_1() {
+//   CompactDisk.clear();
+//   CompactDisk myCompactDisk = new CompactDisk("Generic title", "Generic artist");
+//   assertEquals(1, myCompactDisk.getId());
+// }
+
 }
