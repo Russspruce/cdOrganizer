@@ -15,4 +15,12 @@ public class CompactDiskTest{
    assertEquals("Generic title", myCompactDisk.getTitle());
  }
 
+@Test
+public void all_returnsAllInstancesOfCompactDisk_true() {
+  CompactDisk firstCompactDisk = new CompactDisk("Generic title");
+  CompactDisk secondCompactDisk = new CompactDisk("Summer rose");
+  assertTrue(CompactDisk.all().contains(firstCompactDisk));
+  assertTrue(CompactDisk.all().contains(secondCompactDisk));
+}
+
 }
