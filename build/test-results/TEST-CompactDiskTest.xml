@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CompactDiskTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-04-27T22:42:00" hostname="epicodus-31.local" time="0.004">
+<testsuite name="CompactDiskTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-27T22:42:40" hostname="epicodus-31.local" time="0.001">
   <properties/>
-  <testcase name="all_returnsAllInstancesOfCompactDisk_true" classname="CompactDiskTest" time="0.001"/>
+  <testcase name="all_returnsAllInstancesOfCompactDisk_true" classname="CompactDiskTest" time="0.0"/>
   <testcase name="getArtist_instatiatesCorretly_GenericArtist" classname="CompactDiskTest" time="0.0"/>
-  <testcase name="CompactDisk_intantiatesCorrectly_String" classname="CompactDiskTest" time="0.001"/>
-  <testcase name="CompactDisk_intantiatesCorrectly_true" classname="CompactDiskTest" time="0.001"/>
-  <testcase name="clear_emptiesAllTasksFromArrayList_0" classname="CompactDiskTest" time="0.001"/>
+  <testcase name="CompactDisk_intantiatesCorrectly_String" classname="CompactDiskTest" time="0.0"/>
+  <testcase name="getId_compactDisksInstatiateWithAnID_1" classname="CompactDiskTest" time="0.0"/>
+  <testcase name="CompactDisk_intantiatesCorrectly_true" classname="CompactDiskTest" time="0.0"/>
+  <testcase name="clear_emptiesAllTasksFromArrayList_0" classname="CompactDiskTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

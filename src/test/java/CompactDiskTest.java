@@ -36,11 +36,11 @@ public void clear_emptiesAllTasksFromArrayList_0() {
   assertEquals(CompactDisk.all().size(), 0);
 }
 
-// @Test
-// public void getId_compactDisksInstatiateWithAnID_1() {
-//   CompactDisk.clear();
-//   CompactDisk myCompactDisk = new CompactDisk("Generic title", "Generic artist");
-//   assertEquals(1, myCompactDisk.getId());
-// }
+@Test
+public void getId_compactDisksInstatiateWithAnID_1() {
+  CompactDisk.clear();
+  CompactDisk myCompactDisk = new CompactDisk("Generic title", "Generic artist");
+  assertEquals(1, myCompactDisk.getId());
+}
 
 }
