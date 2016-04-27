@@ -3,6 +3,10 @@ import static org.junit.Assert.*;
 
 public class CompactDiskTest{
 
+  @Rule
+  public ClearRule clearRule = new ClearRule();
+
+
  @Test
  public void CompactDisk_intantiatesCorrectly_true() {
    CompactDisk testCompactDisk = new CompactDisk("Generic title", "Generic artist");
